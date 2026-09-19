@@ -1,0 +1,298 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   Common Section Styles
+========================= */
+
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 8px auto 0;
+}
+
+
+/* =========================
+   About Section
+========================= */
+
+#about p {
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* =========================
+   Skills Section
+========================= */
+
+#skills > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+#skills h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    list-style-position: inside;
+    color: #555;
+}
+
+#skills li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Education Section
+========================= */
+
+#education > div > div {
+    border-left: 4px solid #2563eb;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    background-color: #f8fafc;
+}
+
+#education h4 {
+    font-size: 20px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+#education p {
+    color: #555;
+}
+
+
+/* =========================
+   Projects Section
+========================= */
+
+#projects > div > div {
+    background-color: #f8fafc;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+#projects h3 {
+    color: #2563eb;
+    margin: 15px 0 8px;
+}
+
+#projects h3:first-child {
+    margin-top: 0;
+}
+
+#projects p {
+    color: #555;
+}
+
+#projects ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+#projects li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Hobbies Section
+========================= */
+
+#hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+}
+
+#hobbies li {
+    color: #555;
+}
+
+
+/* =========================
+   Contact Section
+========================= */
+
+#contact p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#contact b {
+    color: #1f2937;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #d1d5db;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h3 {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    section {
+        margin: 25px 15px;
+        padding: 25px;
+    }
+
+    #skills > div {
+        grid-template-columns: 1fr;
+    }
+
+    #hobbies ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 35px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+}
